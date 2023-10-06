@@ -15,8 +15,8 @@ const Navbar = () => {
           width={23}
           height={23}
         />
-        <p className="h2-bold max-sm: font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          Tech<span className="text-primary-500">OverFlow</span>
+        <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
+          Tech<span className="text-primary-500">Overflow</span>
         </p>
       </Link>
       {/* Global Search */}
@@ -35,12 +35,8 @@ const Navbar = () => {
             }}
           />
         </SignedIn>
+        {<MobileNav />}
       </div>
-      {
-        <div className="">
-          <MobileNav />
-        </div>
-      }
     </nav>
   );
 };
