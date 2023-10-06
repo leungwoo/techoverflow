@@ -1,6 +1,6 @@
 "use client";
 
-import { UserButton, useAuth, useUser } from "@clerk/nextjs";
+import { useAuth, useUser } from "@clerk/nextjs";
 import React from "react";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="h1-bold">Welcome to CryptoBull</h1>
-      <UserButton afterSignOutUrl="/sign-in" />
+
       <div>Hello, {user.fullName}, Clerk has you covered!</div>
     </main>
   );

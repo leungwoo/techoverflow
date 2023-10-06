@@ -43,6 +43,7 @@ export default function RootLayout({
               socialButtonsBlockButton: "bg-[#4b0367] hover:bg-[#f8006b]",
               socialButtonsBlockButtonText: "text-white",
               socialButtonsBlockButtonIcon: "text-white",
+              socialButtonsBlockButtonIconHover: "text-white",
             },
           }}
         >
