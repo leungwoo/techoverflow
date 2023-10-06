@@ -8,11 +8,11 @@ import {
 } from "@/components/ui/sheet";
 
 import Image from "next/image";
-import { sidebarLinks } from "../../constants/index";
+import { sidebarLinks } from "../../../constants/index";
 import { SidebarLink } from "@/types";
 import Link from "next/link";
 import { SignedOut } from "@clerk/nextjs";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { usePathname } from "next/navigation";
 
 const NavContent = () => {
