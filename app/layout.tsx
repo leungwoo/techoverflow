@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "TechOver Flow",
+  title: "TechOverFlow",
   description:
     " A Community driven platform for tech enthusiasts to share their knowledge and experience",
   icons: {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Theme from "./Theme";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
           height={23}
         />
         <p className="h2-bold max-sm: font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          Tech <span className="text-primary-500">OverFlow</span>
+          Tech<span className="text-primary-500">OverFlow</span>
         </p>
       </Link>
       {/* Global Search */}
@@ -35,7 +36,11 @@ const Navbar = () => {
           />
         </SignedIn>
       </div>
-      {/* Mobile */}
+      {
+        <div className="">
+          <MobileNav />
+        </div>
+      }
     </nav>
   );
 };
