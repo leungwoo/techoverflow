@@ -7,15 +7,17 @@ export default function Home() {
   const { isLoaded, userId } = useAuth();
   const { isSignedIn, user } = useUser();
 
-  if (!isLoaded || !userId || !isSignedIn) {
-    return null;
-  }
+  //   if (!isLoaded || !userId || !isSignedIn) {
+  //     return null;
+  //   }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="h1-bold">Welcome to CryptoBull</h1>
+      <h1 className="h1-bold text-dark400_light900">
+        Welcome to Tech Overflow
+      </h1>
 
-      <div>Hello, {user.fullName}, Clerk has you covered!</div>
+      {/* <div>Hello, {user.fullName}, Clerk has you covered!</div> */}
     </main>
   );
 }
