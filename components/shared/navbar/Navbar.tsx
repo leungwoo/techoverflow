@@ -17,7 +17,10 @@ const Navbar = () => {
           height={23}
         />
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          Tech<span className="text-primary-500">Overflow</span>
+          Tech
+          <span className="primary-text-gradient text-clip text-transparent">
+            Overflow
+          </span>
         </p>
       </Link>
       <GlobalSearch />
