@@ -81,7 +81,7 @@ const MobileNav = () => {
             </p>
           </Link>
 
-          <div>
+          <div className="flex h-full flex-col justify-between pb-6">
             <SheetClose asChild>
               <NavContent />
             </SheetClose>
