@@ -1,5 +1,14 @@
 import { SidebarLink } from "@/types";
 
+export const techButtons = [
+    {_id:0,name: "NextJS",link:"/tags/nextjs",count:1},
+    {_id:1,name:"Tailwind",link:"/tags/tailwind",count:2},
+    {_id:2,name:"Redux",link:"/tags/redux", count:1},
+    {_id:3,name:"CSS",link:"/tags/css", count:8},
+    {_id:4,name:"React",link:"/tags/react", count:18},
+
+
+]
 export const themes = [
   { value: "light", label: "Light", icon: "/assets/icons/sun.svg" },
   { value: "dark", label: "Dark", icon: "/assets/icons/moon.svg" },
@@ -43,6 +52,7 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Ask a question",
   },
 ];
+
 
 export const BADGE_CRITERIA = {
   QUESTION_COUNT: {

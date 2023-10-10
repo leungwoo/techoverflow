@@ -1,5 +1,12 @@
 import { BADGE_CRITERIA } from "@/constants";
 
+export interface RenderTagProps {
+    name: string;
+    questionCount?: number;
+    showCount?: boolean;
+    _id:number
+    }
+
 export interface SidebarLink {
   imgURL: string;
   route: string;

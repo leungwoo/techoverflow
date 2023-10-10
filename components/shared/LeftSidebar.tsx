@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { SignedOut } from "@clerk/nextjs";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { sidebarLinks } from "../constants/index";
+import { sidebarLinks } from "../../constants/index";
 import { SidebarLink } from "@/types";
 import Image from "next/image";
 
