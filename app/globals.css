@@ -63,9 +63,9 @@ body {
 }
 
 
-.current-theme {
-    filter: brightness(104%) contrast(106%);
-    color: #4b0367 !important;
+.active-theme {
+    filter: hue-rotate(450deg) brightness(30%)  sepia(15%) saturate(3300%);
+   
   }
 
 .light-gradient {
