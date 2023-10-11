@@ -53,7 +53,7 @@ module.exports = {
       backgroundImage: {
         "auth-dark": "url('/assets/images/auth-dark.png')",
         "auth-light": "url('/assets/images/auth-light.png')",
-        "tech": "url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=1480&t=st=1696953399~exp=1696953999~hmac=26fe737b19c405eef58a373416931a2432adfca149b62d7c3b12b557963a264e')",
+        "tech": "url('https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_23-2148431736.jpg?w=1480&t=st=1697063296~exp=1697063896~hmac=f2e77d95a60a7d890458122328bbbbbe288cb8165d7d858234bf67eef5055212')",
       },
       screens: {
         xs: "420px",
