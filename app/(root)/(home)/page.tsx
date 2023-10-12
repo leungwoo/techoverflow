@@ -10,6 +10,7 @@ import React from "react";
 
 import { HomePageFilters } from "@/constants/filter";
 import HomeFilters from "@/components/home/HomeFilters";
+import HomeCard from "@/components/home/HomeCard";
 
 export default function Home() {
   //   const { isLoaded, userId } = useAuth();
@@ -29,7 +30,7 @@ export default function Home() {
           </Button>
         </Link>
       </div>
-      <div className=" mt-11 flex w-full flex-col justify-between gap-5 sm:flex-row sm:items-center md:flex-col md:items-start">
+      <div className=" mt-11 flex w-full flex-col justify-between gap-5 md:gap-0 sm:flex-row sm:items-center md:flex-col md:items-start">
         <LocalSearch
           route="/"
           iconPosition="left"
@@ -44,6 +45,9 @@ export default function Home() {
           containerClass="max-md:flex hidden"
         />
         <HomeFilters filters={HomePageFilters} />
+      </div>
+      <div className="flex flex-col gap-4">
+        <HomeCard />
       </div>
     </>
   );
