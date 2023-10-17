@@ -4,7 +4,7 @@ export interface RenderTagProps {
     name: string;
     questionCount?: number;
     showCount?: boolean;
-    _id:number
+    _id:string
     }
 
 export interface SidebarLink {

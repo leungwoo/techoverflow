@@ -6,27 +6,27 @@ import RenderTag from "./RenderTag";
 
 const dummyQuestions = [
   {
-    id: 1,
+    id: "1",
     question: "What is the capital of France?",
     link: "/question/1",
   },
   {
-    id: 2,
+    id: "2",
     question: "Who wrote the play 'Romeo and Juliet'?",
     link: "/question/2",
   },
   {
-    id: 3,
+    id: "3",
     question: "What is the largest planet in our solar system?",
     link: "/question/3",
   },
   {
-    id: 4,
+    id: "4",
     question: "Which gas do plants absorb from the atmosphere?",
     link: "/question/4",
   },
   {
-    id: 5,
+    id: "5",
     question: "What is the chemical symbol for gold?",
     link: "/question/5",
   },

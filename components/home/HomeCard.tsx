@@ -1,56 +1,59 @@
 import React from "react";
 
-import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import RenderTag from "../shared/RenderTag";
-import Image from "next/image";
 import NoResult from "../shared/NoResult";
+import QuestionCard from "../cards/QuestionCard";
 
-type Question = {
-  _id: number;
-  title: string;
-  tags: {
-    _id: number;
-    name: string;
-  }[];
-  author: string;
-  createdAt: string;
-  answers: number;
-  upvotes: number;
-  views: number;
-};
-
-const question: Question[] = [
+const question = [
   {
-    _id: 0,
-    title: "Nextjs is amazing and JSMastey is the best place to learn it",
+    _id: 1,
+    title: "How to get started with TypeScript?",
     tags: [
-      {
-        _id: 0,
-        name: "nextjs",
-      },
-      { _id: 1, name: "reactjs" },
+      { _id: 1, name: "TypeScript" },
+      { _id: 2, name: "Programming" },
     ],
-    author: "Richard",
-    createdAt: "35 days ago",
-    answers: 2,
-    upvotes: 1,
-    views: 0,
+    author: {
+      _id: 101,
+      name: "John Doe",
+      picture: "/images/john-doe.jpg",
+    },
+    createdAt: new Date("2023-09-15").toLocaleDateString(),
+    answers: [],
+    upvotes: 10,
+    views: 120,
   },
   {
-    _id: 0,
-    title: "Tailwind is amazing and JSMastey is the best place to learn it",
+    _id: 2,
+    title: "Best practices for web development",
     tags: [
-      {
-        _id: 0,
-        name: "Tailwindcss",
-      },
-      { _id: 1, name: "reactjs" },
+      { _id: 3, name: "Web Development" },
+      { _id: 4, name: "Best Practices" },
     ],
-    author: "Kelly",
-    createdAt: "30 days ago",
-    answers: 20,
-    upvotes: 10,
-    views: 30,
+    author: {
+      _id: 102,
+      name: "Alice Smith",
+      picture: "/images/alice-smith.jpg",
+    },
+    createdAt: new Date("2023-09-20").toLocaleDateString(),
+    answers: [],
+    upvotes: 15,
+    views: 150,
+  },
+  {
+    _id: 3,
+    title: "Introduction to data science",
+    tags: [
+      { _id: 5, name: "Data Science" },
+      { _id: 6, name: "Machine Learning" },
+    ],
+    author: {
+      _id: 103,
+      name: "Ethan Johnson",
+      picture: "/images/ethan-johnson.jpg",
+    },
+    createdAt: new Date("2023-09-25").toLocaleDateString(),
+    answers: [],
+    upvotes: 8,
+    views: 100,
   },
 ];
 
@@ -59,37 +62,17 @@ const HomeCard = () => {
     <div className="mt-10 flex w-full flex-col gap-6 justify-between  rounded-xl">
       {question.length > 0 ? (
         question.map((question) => (
-          <Card
-            className="border-none background-light900_dark300"
+          <QuestionCard
+            _id={question._id}
             key={question._id}
-          >
-            <CardHeader>
-              <CardTitle className="line-clamp-1">{question.title} </CardTitle>
-              <RenderTag name={question.tags[0].name} _id={question._id} />
-            </CardHeader>
-            <CardFooter className="flex justify-between items-center flex-wrap">
-              <div className="flex gap-2 items-center">
-                <Image
-                  src="/assets/icons/avatar.svg"
-                  alt="avatar"
-                  width={20}
-                  height={20}
-                  className="invert-colors"
-                />
-                <p className="small-medium text-dark500_light700">
-                  {question.author}
-                </p>
-                <p className="small-medium text-dark500_light700">
-                  {question.createdAt}
-                </p>
-              </div>
-              <p className=" small-medium text-dark500_light700">
-                Answers:{question.answers} | 1 Vote:{question.upvotes} | 0
-                Views:
-                {question.views}
-              </p>
-            </CardFooter>
-          </Card>
+            title={question.title}
+            tags={question.tags}
+            author={question.author}
+            createdAt={new Date(question.createdAt)}
+            answers={question.answers}
+            upvotes={question.upvotes}
+            views={question.views}
+          />
         ))
       ) : (
         <NoResult
